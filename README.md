@@ -17,14 +17,14 @@ Testing Zephyr fundamentals using the **Adafruit HUZZAH32 (ESP32)**.
 ## Notes
 This repo serves as a lab notebook for understanding Zephyr’s threading, GPIO, and logging systems.
 =======
-# 💡 Zephyr RTOS Experiments
+# Zephyr RTOS Experiments
 
 A collection of small projects exploring core concepts in **Zephyr RTOS**, running on the **Adafruit HUZZAH32 (ESP32)** and **NXP FRDM-MCXN947** boards.  
 Each project focuses on one subsystem or kernel feature: GPIO, ADC/DAC, threads, queues, UART, CAN bus, and more.
 
 ---
 
-## 🧩 Project Index
+## Project Index
 
 | Project | Description | Key Concepts |
 |----------|--------------|---------------|
@@ -45,7 +45,7 @@ Each project focuses on one subsystem or kernel feature: GPIO, ADC/DAC, threads,
 
 ---
 
-## 🧠 Learning Goals
+## Learning Goals
 - Understand **Zephyr’s kernel model** — threads, priorities, and synchronization primitives.  
 - Learn **driver development** and how the **Device Tree** and **Kconfig** system integrate hardware and software.  
 - Explore **peripheral interfaces** (GPIO, I2C, SPI, ADC/DAC, CAN).  
@@ -53,7 +53,7 @@ Each project focuses on one subsystem or kernel feature: GPIO, ADC/DAC, threads,
 
 ---
 
-## ⚙️ Tools & Environment
+## Tools & Environment
 - **Boards:** Adafruit HUZZAH32 (ESP32), NXP FRDM-MCXN947  
 - **Toolchain:** Zephyr SDK, west, OpenOCD, J-Link, VS Code  
 - **Languages:** C, CMake, Kconfig, DeviceTree  
@@ -61,7 +61,7 @@ Each project focuses on one subsystem or kernel feature: GPIO, ADC/DAC, threads,
 
 ---
 
-## 🧩 How to Build & Flash
+## How to Build & Flash
 
 ```bash
 # Example: build and flash LED shell demo
