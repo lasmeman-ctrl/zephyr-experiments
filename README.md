@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Zephyr RTOS Experiments
 
 Testing Zephyr fundamentals using the **Adafruit HUZZAH32 (ESP32)**.
