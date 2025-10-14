@@ -1,0 +1,25 @@
+/ {
+    aliases {
+        my-adc = &lpadc0;
+        my-adc-channel = &lpadc0_ch0;
+    };
+};
+
+/* Enable ADC0 and route P0_14 (ARD_A2) to channel 0 */
+&lpadc0 {
+    status = "okay";
+    #address-cells = <1>;
+	#size-cells = <0>;
+
+
+    /* P4_23 for 10 kΩ potentiometer */
+    lpadc0_ch0: channel@1 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_EXTERNAL1";
+        zephyr,vref-mv = <3300>;
+		zephyr,acquisition-time = <10>;
+        zephyr,resolution = <12>;
+        zephyr,input-positive = <2>;
+    };
+};

@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/home/las/zephyrproject/Projects/led_toggler'
+    source-dir: '/home/las/zephyrproject/Projects/led_toggler'
+  board:
+    name: 'frdm_mcxn947'
+    path:
+     - '/home/las/zephyrproject/zephyr/boards/nxp/frdm_mcxn947'
+    qualifiers: 'mcxn947/cpu0'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/las/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/las/zephyrproject/zephyr/boards/nxp/frdm_mcxn947/frdm_mcxn947_mcxn947_cpu0.dts'
+    include-dirs:
+     - '/home/las/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/las/zephyrproject/modules/hal/atmel/include'
+     - '/home/las/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/las/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/las/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/las/zephyrproject/modules/hal/microchip/include'
+     - '/home/las/zephyrproject/modules/hal/microchip/dts'
+     - '/home/las/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/las/zephyrproject/modules/hal/nxp/dts'
+     - '/home/las/zephyrproject/modules/hal/stm32/dts'
+     - '/home/las/zephyrproject/modules/hal/ti/dts'
+     - '/home/las/zephyrproject/zephyr/include'
+     - '/home/las/zephyrproject/zephyr/include/zephyr'
+     - '/home/las/zephyrproject/zephyr/dts/common'
+     - '/home/las/zephyrproject/zephyr/dts/vendor'
+     - '/home/las/zephyrproject/zephyr/dts/rx'
+     - '/home/las/zephyrproject/zephyr/dts/x86'
+     - '/home/las/zephyrproject/zephyr/dts/xtensa'
+     - '/home/las/zephyrproject/zephyr/dts/sparc'
+     - '/home/las/zephyrproject/zephyr/dts/riscv'
+     - '/home/las/zephyrproject/zephyr/dts/posix'
+     - '/home/las/zephyrproject/zephyr/dts/arm64'
+     - '/home/las/zephyrproject/zephyr/dts/arm'
+     - '/home/las/zephyrproject/zephyr/dts/arc'
+     - '/home/las/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/las/zephyrproject/zephyr/boards/nxp/frdm_mcxn947/frdm_mcxn947_mcxn947_cpu0_defconfig'
+     - '/home/las/zephyrproject/Projects/led_toggler/prj.conf'
+    user-files:
+     - '/home/las/zephyrproject/Projects/led_toggler/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/las/zephyr-sdk-0.17.2'
+  zephyr:
+    version: '4.2.0-rc2'
+    zephyr-base: '/home/las/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/las/zephyrproject/.venv/bin/west build -p always -b frdm_mcxn947/mcxn947/cpu0'
+  topdir: '/home/las/zephyrproject'
+  version: '1.4.0'

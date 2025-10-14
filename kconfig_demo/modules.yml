@@ -1,0 +1,3 @@
+# Projects/kconfig_demo/modules.yml
+- name: say_hello
+  path: ../../modules/say_hello

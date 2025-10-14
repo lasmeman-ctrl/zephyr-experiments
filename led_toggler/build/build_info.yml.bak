@@ -1,0 +1,4 @@
+west:
+  command: /home/las/zephyrproject/.venv/bin/west build -p always -b frdm_mcxn947/mcxn947/cpu0
+  topdir: /home/las/zephyrproject
+  version: 1.4.0
