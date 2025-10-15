@@ -1,6 +1,6 @@
 # Zephyr RTOS Experiments
 
-Testing Zephyr fundamentals using the **Adafruit HUZZAH32 (ESP32)**.
+Testing Zephyr fundamentals using the **NXP FRDM-MCXN947** and **Adafruit HUZZAH32 (ESP32)**.
 
 ##  Experiments
 - **UART Shell LED Control:** Toggle onboard LED via UART command  
